@@ -1,0 +1,9 @@
+[theme]
+primaryColor = "#1E3A8A"         # Warna biru tua (untuk tombol, tab aktif, dan komponen utama)
+backgroundColor = "#FFFFFF"      # Tetap PUTIH bersih sesuai keinginan Anda
+secondaryBackgroundColor = "#EFF6FF" # Latar belakang sidebar (Biru muda sangat lembut agar estetik)
+textColor = "#1E293B"            # Warna teks utama (tetap gelap/bawaan agar mudah dibaca)
+font = "sans serif"
+
+[client]
+showSidebarNavigation = false
