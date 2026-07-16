@@ -11,14 +11,16 @@ LOGO_PATH = os.path.join(BASE_DIR, "logo_sipkkb.png")
 # KONFIGURASI MySQL
 # =====================================================================
 import pymysql
+import streamlit as st
+
 pymysql.install_as_MySQLdb()
 
 MYSQL_CONFIG = {
-    "host":     "127.0.0.1",
-    "port":     3306, 
-    "user":     "root",
-    "password": "",
-    "database": "sipkkb",
+    "host": st.secrets["MYSQLHOST"],
+    "port": int(st.secrets["MYSQLPORT"]),
+    "user": st.secrets["MYSQLUSER"],
+    "password": st.secrets["MYSQLPASSWORD"],
+    "database": st.secrets["MYSQLDATABASE"]
 }
 
 # =====================================================================
